@@ -7,7 +7,6 @@ export default class ContactOutput extends LightningElement {
 
 
     get firstName() {
-        console.log('something for me?');
         if (this.contact) {
         return JSON.parse(this.contact).FirstName; 
         }
@@ -26,7 +25,7 @@ export default class ContactOutput extends LightningElement {
     }
 
     handleClick(event) {
-        sendInvitation({firstName: JSON.parse(this.contact).FirstName, email: JSON.parse(this.contact).Email});
+        sendInvitation({email: JSON.parse(this.contact).Email});
         
     }
 

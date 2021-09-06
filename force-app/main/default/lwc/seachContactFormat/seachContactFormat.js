@@ -4,7 +4,6 @@ import { ShowToastEvent } from 'lightning/platformShowToastEvent'
 
 export default class SeachContactFormat extends LightningElement {
 
-    
     @track buttonStatus = true;
     @api lastNameValue;
 
@@ -15,11 +14,9 @@ export default class SeachContactFormat extends LightningElement {
     handleChange(event) {
         this.buttonStatus=!event.detail.value;
         this.lastNameValue=event.detail.value;
-        console.log(this.lastNameValue);
     }
    
     handleSearch(event) {
-        console.log('im here');
         getContact({lastName: this.lastNameValue})
         .then((data)=>{
             this.dispatchEvent(new CustomEvent('found',{detail: {value: data}}));
