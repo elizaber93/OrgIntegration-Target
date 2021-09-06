@@ -1,0 +1,13 @@
+<template>
+    <div class="slds-box slds-theme_default">
+        <template if:true={contact}>
+            <lightning-card  title="Search result">
+                <lightning-button label="Send Email" slot="actions" onclick={handleClick}></lightning-button>
+                <p class="slds-p-horizontal_small">Firstname: {firstName}</p>
+                <p class="slds-p-horizontal_small">Lastname: {lastName}</p>
+                <p class="slds-p-horizontal_small">Email: {email}</p>
+            </lightning-card>
+    </template>
+    
+    </div>
+</template>

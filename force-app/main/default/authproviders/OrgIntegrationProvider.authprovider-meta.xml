@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AuthProvider xmlns="http://soap.sforce.com/2006/04/metadata">
+    <consumerKey>3MVG9z6NAroNkeMmZAp0da9vGUP4V710W0PllEsVnCoa5zxv3kuVbDZm8N2gHzqFBfYIAsRcv_enD8WSsGpPT</consumerKey>
+    <consumerSecret>6ht4mpZeXz8iULE6YBeRyhmz7oyouCx77vB4lIp3p56rN1Jl35AFPXZ5WBic4HyiX6QFRn9NMWVVmZyZFM6+eHBBGPdiC2rX</consumerSecret>
+    <defaultScopes>refresh_token full</defaultScopes>
+    <executionUser>test-7ta19nkucuez@example.com</executionUser>
+    <friendlyName>OrgIntegrationProvider</friendlyName>
+    <includeOrgIdInIdentifier>true</includeOrgIdInIdentifier>
+    <providerType>Salesforce</providerType>
+    <registrationHandler>AutocreatedRegHandler1630597482820</registrationHandler>
+    <sendAccessTokenInHeader>false</sendAccessTokenInHeader>
+    <sendClientCredentialsInHeader>false</sendClientCredentialsInHeader>
+    <sendSecretInApis>true</sendSecretInApis>
+</AuthProvider>
